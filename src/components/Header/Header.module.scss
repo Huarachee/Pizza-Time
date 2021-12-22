@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: -30px;
+}
+
+.menuHeader{
+    
+}
+
+.menuHeader{
+    margin-top: 40px;
+}
+
+.menuHeaderList{
+    list-style-type: none;
+    display: flex;
+
+    .menuHeaderItem{
+        font-size: 30px;
+        padding: 2px 18px 6px 18px;
+        border-radius: 30px;
+        margin-right: 10px;
+        transition: all .4s;
+
+        &:hover{
+            background-color: #F39200;
+            
+        }
+    }
+}
+
+.basket{
+    height: 60px;
+    background-color: #F39200;
+    margin-top: 40px;
+    padding: 2px 18px 6px 18px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}

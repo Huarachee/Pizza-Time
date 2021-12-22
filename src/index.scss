@@ -1,0 +1,270 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar{
+  width: 11px;
+  // background-color: #181617;
+  background-color: #ecebeb;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(59, 57, 57);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #F39200;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.appContentTitle{
+  font-size: 60px;
+  margin: 50px;
+}
+
+.appContentMenu{
+  display: flex;
+
+  .PopupContainer{
+    margin-left: 75px;
+  }
+}
+
+// basket -- start
+
+.basket{
+  height: 60px;
+  background-color: #F39200;
+  margin-top: 40px;
+  padding: 2px 18px 6px 18px;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.basket--outline{
+  display: flex;
+}
+
+// basket -- end
+
+
+// sortPopup -- start
+
+.sortContainer{
+  width: 300px;
+}
+
+.sort{
+  position: relative;
+
+  img{
+      // padding: 20px 0 0 0;
+      position: absolute;
+      top: -3px;
+      left: -5px;
+  }
+  
+  .sortText{
+      margin-left: 40px;
+
+      b{
+          font-size: 20px;
+      }
+  
+      span{
+          font-size: 18px;
+          margin-left: 8px;
+          color: #F39200;
+          cursor: pointer;
+          text-decoration: underline;
+      }
+  }
+  
+}
+
+.sortPopup{
+  width: 300px;
+  background-color: rgb(240, 234, 234);
+  border-radius: 0 0 20px 20px;
+
+  ul{
+      list-style-type: none;
+  }
+
+  li{
+      margin: 10px;
+      font-size: 24px;
+      cursor: pointer;
+
+      &.active{
+          color: #F39200;
+          text-decoration: underline;
+      }
+  }
+}
+
+// sortPopup -- end
+
+// Categories -- start
+
+.categories{
+  font-size: 30px;
+
+  ul{
+    list-style-type: none;
+    display: flex;
+  }
+
+  li{
+    margin-right: 15px;
+    padding: 2px 18px 6px 18px;
+    border-radius: 30px;
+    border: 1px solid #F39200;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover{
+      background-color: #F39200;
+    }
+    &:active{
+      background-color: darken(#f9f9f9, 5%);
+    }
+    &.active{
+      background-color: #F39200;
+    }
+  }
+}
+
+
+// Categories -- end
+
+// Home-page -- start
+
+.HomeMenu{
+  display: flex;
+}
+
+.HomeCard{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 110px;
+  grid-row-gap: 60px;
+  margin: 40px 0 40px 0;
+}
+
+// Home-page -- end
+
+
+// PizzaCard -- start
+
+.cardPizza{
+  width: 331px;
+  background-color: #FFEFC4;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px rgba($color: #000000, $alpha:.5);
+}
+
+.cardPizzaName{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardPizzaContainer{
+  display: flex;
+}
+
+.cardPizzaPrice{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.criterionTitle{
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0 5px 0;
+}
+
+.listCriterion{
+  display: flex;
+  list-style-type: none;
+  background-color: #F39200;
+  width: 231px;
+  padding: 5px 8px 6px 8px;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  li{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .4s;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.listDoughCriterion{
+  width: 219px;
+}
+
+.activeItemPizza{
+  background-color: #fff;
+}
+
+.disabled{
+  color: #000;
+  opacity: .5;
+  pointer-events: none;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all .4s;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &:hover{
+    background-color: #fff;
+  }
+}
+
+// PizzaCard -- end
+
+

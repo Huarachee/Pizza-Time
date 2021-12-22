@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer{
+    background-color: #F39200;
+    display: flex;
+
+    .footerContent{
+        margin: 0 auto;
+    }
+    .footerText{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}

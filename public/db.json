@@ -1,0 +1,99 @@
+{
+    "pizzas": [
+        {
+            "id": 0,
+            "imageUrl": "/img/pizza-img-1.png",
+            "name": "Пицца “Мясная”",
+            "types": [
+                0,
+                1
+            ],
+            "sizes": [
+                28,
+                33
+            ],
+            "price": 350,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 1,
+            "imageUrl": "/img/pizza-img-2.png",
+            "name": "Пицца “Овощная”",
+            "types": [
+                0
+            ],
+            "sizes": [
+                20,
+                33
+            ],
+            "price": 300,
+            "category": 0,
+            "rating": 5
+        },
+        {
+            "id": 2,
+            "imageUrl": "/img/pizza-img-3.png",
+            "name": "Пицца “Карбонара”",
+            "types": [
+                1
+            ],
+            "sizes": [
+                20,
+                28,
+                33
+            ],
+            "price": 400,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "imageUrl": "/img/pizza-img-4.png",
+            "name": "Пицца “Микс”",
+            "types": [
+                0,
+                1
+            ],
+            "sizes": [
+                20,
+                28,
+                33
+            ],
+            "price": 550,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 4,
+            "imageUrl": "/img/pizza-img-5.png",
+            "name": "Пицца “Бюджетная”",
+            "types": [
+                1
+            ],
+            "sizes": [
+                20
+            ],
+            "price": 180,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 5,
+            "imageUrl": "/img/pizza-img-6.png",
+            "name": "Пицца “Классическая”",
+            "types": [
+                0,
+                1
+            ],
+            "sizes": [
+                28,
+                33
+            ],
+            "price": 390,
+            "category": 0,
+            "rating": 4
+        }
+    ]
+    
+}
