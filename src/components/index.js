@@ -7,3 +7,4 @@ export { default as PizzaCard } from './PizzaCard/index';
 export { default as Footer } from './Footer/index';
 export { default as Categories } from './Categories/index';
 export { default as SortPopup } from './SortPopup';
+export { default as PizzaCardLoading } from './PizzaCard/PizzaCardLoading';

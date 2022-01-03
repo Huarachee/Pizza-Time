@@ -3,13 +3,19 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // import styles from "./Card.module.scss";
 
+import PizzaCardLoading from "./PizzaCardLoading";
 
-function PizzaCard({ name, imageUrl, price, types, sizes }) {
+
+function PizzaCard({ name, imageUrl, price, types, sizes, isLoading }) {
     const availableTypes = ['тонкое', 'классическое'];
     const availableSizes = [20, 28, 33];
 
     const [activeType, setActiveType] = React.useState(types[0]);
     const [activeSize, setActiveSize] = React.useState(sizes[0]);
+
+    if (isLoading) {
+        return <PizzaCardLoading/>
+    }
 
     const onSelectType = (index) => {
         setActiveType(index);
@@ -21,8 +27,8 @@ function PizzaCard({ name, imageUrl, price, types, sizes }) {
     
     return (
         <div className="cardPizza">
-            <img src={ imageUrl} alt="pizza" width={331} height={251}/>
-            <h4 className="cardPizzaName">{name}</h4>
+            <img src={ imageUrl } alt="pizza" width={331} height={251}/>
+            <h4 className="cardPizzaName">{ name }</h4>
             <div className="cardCriterionContainer">
                 <div className="doughCriterionContainer">
                     <p className="doughCriterionTitle criterionTitle">Тесто:</p>
@@ -69,15 +75,18 @@ function PizzaCard({ name, imageUrl, price, types, sizes }) {
 }
 
 PizzaCard.propTypes = {
-    name: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
-    types: PropTypes.arrayOf(PropTypes.number).isRequired,
-    sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+    name: PropTypes.string,
+    imageUrl: PropTypes.string,
+    price: PropTypes.number,
+    types: PropTypes.arrayOf(PropTypes.number),
+    sizes: PropTypes.arrayOf(PropTypes.number),
 };
 
 PizzaCard.defaultProps = {
-    types: []
+    name: '---',
+    price: 0,
+    types: [],
+    sizes: [],
 };
 
 export default PizzaCard;
